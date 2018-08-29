@@ -19,7 +19,10 @@ Uber 出的一套分布式计算平台，支持TF、pytorch、Keras。
 首先你需要一台V100——V100对混合精度训练实现了硬件上的加速。
 [nvidia示例代码](https://github.com/NVIDIA/DeepLearningExamples/blob/master/TensorFlow/Classification/imagenet/nvcnn_hvd.py)
 
-# [DALI](https://github.com/NVIDIA/DALI)
-传统的编解码都是在CPU上完成的。DALI使用GPU对图像编解码实现加速。
-编译过程需要Boost库，安装请看[Here]().
+# 加速策略3——[DALI](https://github.com/NVIDIA/DALI)
+传统的编解码都是在CPU上完成的。DALI使用GPU对图像编解码实现加速。<br>
+
+安装要点：<br>
+* 编译过程需要Boost库，安装请看[Here](https://github.com/shenqixiaojiang/installOthers)。 <br>
+* 如果你安装了nvJPEG-library库，那么libjpeg-turbo库则不是DALI必须的了。因此可以在cmake的过程中关闭。<br>
 
