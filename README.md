@@ -10,13 +10,13 @@ Uber 出的一套分布式计算平台，支持TF、pytorch、Keras。
 
 
 ### [TF原生分布式](https://blog.csdn.net/hjimce/article/details/61197190) <br>
-传统worker全部与ps通信的方式。worker与ps的通信问题是性能的主要瓶颈，大大限制了其扩展性。单机8卡的速度只能是原始单卡的3.x倍，仅Horovod的一半。
+传统worker全部与ps通信的方式。worker与ps的通信问题是性能的主要瓶颈，大大限制了其扩展性。单机8卡的速度只是原始单卡的3.x倍，仅Horovod单机8卡速度的一半。
 
 优点：训练较稳定。 <br>
 缺点：速度慢，扩展性差。<br>
 
 # 加速策略2——混合精度训练
-首先你需要一台V100——V100对混合精度训练实现了硬件上的加速。
+首先你需要一台V100——V100对混合精度训练实现了硬件上的加速。<br>
 [nvidia示例代码](https://github.com/NVIDIA/DeepLearningExamples/blob/master/TensorFlow/Classification/imagenet/nvcnn_hvd.py)
 
 # 加速策略3——[DALI](https://github.com/NVIDIA/DALI)
