@@ -24,5 +24,5 @@ Uber 出的一套分布式计算平台，支持TF、pytorch、Keras。
 
 安装要点：<br>
 * 编译过程需要Boost库，安装请看[Here](https://github.com/shenqixiaojiang/installOthers)。 <br>
-* 如果你安装了nvJPEG-library库，那么libjpeg-turbo库则不是DALI必须的了。因此可以在cmake的过程中关闭。<br>
+* 如果你安装了nvJPEG-library库，那么libjpeg-turbo库则不是必须的了。因此可以在cmake的过程中关闭。<br>
 
