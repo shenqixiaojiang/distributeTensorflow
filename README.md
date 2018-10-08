@@ -27,4 +27,4 @@ Uber 出的一套分布式计算平台，支持TF、pytorch、Keras。
 * 如果你安装了nvJPEG-library库，那么libjpeg-turbo库则不是必须的了。因此可以在cmake的过程中关闭。<br>
 
 # 精度调整策略
-当batchsize变大后，得到好的测试结果所能允许的lr范围在变小，也就是说，当batchsize很小时，比较容易找打一个合适的lr达到不错的结果，当batchsize变大后，可能需要精细地找一个合适的lr才能达到较好的结果，这也给实际的large batch分布式训练带来了困难。
+[文献](https://arxiv.org/abs/1508.02788)指出：当batchsize变大后，得到好的测试结果所能允许的lr范围在变小，也就是说，当batchsize很小时，比较容易找打一个合适的lr达到不错的结果，当batchsize变大后，可能需要精细地找一个合适的lr才能达到较好的结果，这也给实际的large batch分布式训练带来了困难。
