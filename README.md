@@ -31,3 +31,4 @@ Uber 出的一套分布式计算平台，支持TF、pytorch、Keras。
 * [文献](https://arxiv.org/abs/1508.02788)指出：当batchsize变大后，得到好的测试结果所能允许的lr范围在变小，也就是说，当batchsize很小时，比较容易找打一个合适的lr达到不错的结果，当batchsize变大后，可能需要精细地找一个合适的lr才能达到较好的结果，这也给实际的large batch分布式训练带来了困难。
 * batch越大越不容易跳出local minima，因为少了随机性。momentum当增大lr时，也要相应增加momentum的系数，让lr增大产生的大梯度通过momentum稍微稳住一些。
 * warm up是关键，同样的倍数，不同warm up策略也会导致差距很大。
+## [LARS](https://arxiv.org/pdf/1708.03888.pdf)
