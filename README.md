@@ -32,3 +32,5 @@ Uber 出的一套分布式计算平台，支持TF、pytorch、Keras。
 * batch越大越不容易跳出local minima，因为少了随机性。momentum当增大lr时，也要相应增加momentum的系数，让lr增大产生的大梯度通过momentum稍微稳住一些。
 * warm up是关键，同样的倍数，不同warm up策略也会导致差距很大。
 ## [LARS](https://arxiv.org/pdf/1708.03888.pdf)
+
+## 分布式训练相关总结[paper](https://github.com/tmulc18/DistributedDeepLearningReads)
